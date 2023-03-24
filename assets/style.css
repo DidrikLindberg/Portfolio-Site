@@ -1,7 +1,66 @@
 /* global attribute of a dark blue background */
 * {
-  background-color: #030337;
+  background-color: #18222d;
   /* give global font family */
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 
+/* style headder as a horizontal box */
+header {
+padding: 20px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: white;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 24px;
+  color: white;
+
+}
+
+
+header nav {
+  padding: 0%;
+  margin: auto;
+  float: right;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+header nav a {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+#img {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/digital-marketing-meeting.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* style the main section */
+.card {
+ width: 25%;
+ display: inline-block;
+ margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
