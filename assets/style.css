@@ -1,8 +1,8 @@
 /* global attribute of a dark blue background */
 :root {
-    --secondary-color: #304561;
-    --primary-color: #212f3f;
-    --hover-color: #4d9ca0;
+    --secondary-color: #212f3f;
+    --primary-color: #304561;
+    --hover-color: #b3cbe7;
 }
 
 * {
@@ -64,28 +64,27 @@ header nav ul li {
 }
 
 
-/* style the main section */
-/* .sub-title{
-  font-size: 60px;
-  color: #ffffff;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 25px;
-  
-} */
+/*------------------------------ style the main section --------------------------------*/
 /* overall styling for main section */
 #main {
-  padding: 20px;
+  padding: 50px;
   margin-top: 10%;
   color: white;
   margin-bottom: 105px;
+  /* force grid card to next line if it cant fit */
+  display: flex;
+  flex-wrap: wrap;
+  /* justify content to center grid */
+  justify-content: center;
 }
 /* styling of card container */
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 50px;
   margin-top: 50px;
+  /* display: flex;
+  flex-wrap: wrap; */
 
 }
 
@@ -95,13 +94,15 @@ header nav ul li {
   font-size: 15px;
   font-weight: bold;
   border-radius: 10px;
+  flex: 1 0 0;
 /* transition element */
-  transition: transform 0.2s;
+  transition: transform 0.5s;
 }
 
 /* style the h3 */
 .project-list h3 {
   font-size: 25px;
+  text-align: center;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -109,7 +110,6 @@ header nav ul li {
 .project-list p {
   font-size: 15px;
   font-weight: lighter;
-  color: white;
   text-align: center;
   margin-bottom: 5px;
 
@@ -118,10 +118,19 @@ header nav ul li {
 /* style the img */
 .project-list img {
   width: 100%;
-
-
   margin-bottom: 20px;
   min-height: 55%;
+}
+
+.project-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+  display: block;
+  margin-top: 10px;
 }
 
 /* style the change for cards when hovering */
@@ -130,51 +139,7 @@ header nav ul li {
   transform: scale(1.05);
 }
 
-  /* width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-  grid-gap: 20px;
-  margin-top: 50px;
-}
 
-.card {
-  background-color: #4d9ca0;
-  padding: 40px;
-  font-size: 15px;
-  font-weight: bold;
-  color: white;
-
-  }
-
-  #projects h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    margin-bottom: 25px;
-    background-color: #4d9ca0;
-  }
- */
-
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-} */
-
-
-/* .card {
- min-width: 25%;
- height: 200px;
- margin: 10px;
- flex: 1 0 0;
- display: inline-block;
- text-align: center;
- padding: 10px;
- border-radius: 25px;
- background-color: #4d9ca0;
-} */
 
 
 /* multiple media accessability */
@@ -182,6 +147,9 @@ header nav ul li {
   .card {
     width: 100%;
   }
+.project-list .card {
+  display: inline-block;
+}
 }
 
 @media screen and (max-width: 768px) {
