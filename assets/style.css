@@ -1,6 +1,11 @@
 /* global attribute of a dark blue background */
+:root {
+    --secondary-color: #304561;
+    --primary-color: #212f3f;
+    --hover-color: #4d9ca0;
+}
+
 * {
-  background-color: #212f3f;
   /* give global font family */
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -10,7 +15,10 @@
 html {
   scroll-behavior: smooth;
 }
-
+body {
+  background-color: var(--primary-color);
+  color: white;
+}
 /* style headder as a horizontal box */
 header {
 padding: 20px;
@@ -82,13 +90,13 @@ header nav ul li {
 }
 
 .project-list .card {
-  background-color: #14202e;
-  padding: 40px;
+  background-color: var(--secondary-color);
+  padding: 40px;  
   font-size: 15px;
   font-weight: bold;
   border-radius: 10px;
 /* transition element */
-  /* transition: transform 0.2s; */
+  transition: transform 0.2s;
 }
 
 /* style the h3 */
@@ -96,7 +104,6 @@ header nav ul li {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 15px;
-  background-color: #14202e;
 }
 /* style the paragraphs */
 .project-list p {
@@ -105,15 +112,23 @@ header nav ul li {
   color: white;
   text-align: center;
   margin-bottom: 5px;
-  background-color: #14202e;
+
+
 }
 /* style the img */
 .project-list img {
   width: 100%;
-  background-color: #14202e;
+
+
   margin-bottom: 20px;
+  min-height: 55%;
 }
 
+/* style the change for cards when hovering */
+.container .card:hover {
+  background: var(--hover-color);
+  transform: scale(1.05);
+}
 
   /* width: 100%;
   display: grid;
