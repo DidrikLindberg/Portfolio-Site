@@ -70,6 +70,7 @@ header nav ul li {
   padding: 20px;
   margin-top: 10%;
   color: white;
+  margin-bottom: 105px;
 }
 /* styling of card container */
 .project-list {
@@ -95,15 +96,23 @@ header nav ul li {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 15px;
+  background-color: #14202e;
+}
+/* style the paragraphs */
+.project-list p {
+  font-size: 15px;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: #14202e;
 }
 /* style the img */
 .project-list img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
+  background-color: #14202e;
+  margin-bottom: 20px;
 }
-
 
 
   /* width: 100%;
@@ -156,7 +165,7 @@ header nav ul li {
 /* multiple media accessability */
 @media screen and (max-width: 992px) {
   .card {
-    width: 50%;
+    width: 100%;
   }
 }
 
