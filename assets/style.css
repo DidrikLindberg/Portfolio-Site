@@ -58,9 +58,37 @@ header nav ul li {
 
 /* style the main section */
 .card {
- width: 25%;
+ min-width: 25%;
+ margin: 10px;
+ flex: 1 0 0;
  display: inline-block;
- margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+ text-align: center;
+ padding: 10px;
+ border-radius: 25px;
+ background-color: #4d9ca0;
+}
+
+
+/* multiple media accessability */
+@media screen and (max-width: 992px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+footer {
+  background-color: #bcbec0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  
 }
